@@ -30,7 +30,7 @@ After trimming:  108362002 reads R1, sequence length 100-150
 
 ### then you need to run the command samtools fixmate with the -m option (this is necessary for removing PCR duplicate reads)
 
-samtools fixmate -m -@ 14 X.bam X_fxm.bam
+    samtools fixmate -m -@ 14 X.bam X_fxm.bam
 
 ### In my experience some samtools functions don't work well with standard out, such as fixmate and markdup, so it is hard to do these in a batch
 
@@ -163,7 +163,7 @@ cut -f 1 BCF2_filt2.recode.vcf | sort | uniq -c
          48 NW_025091571.1
          55 NW_025091572.1
 
-##### The 28 autosomal chromosomes all start with the prefix "NC_" anything with a prefix of "NW_" is a non-localized scaffold. When I began this project, I had hoped to be able to place them using linkage, improving the genome assembly, but as you will see none of the loci on these unlocalized scaffolds were very informative.
+##### The 28 autosomal chromosomes all start with the prefix "NC_" anything with a prefix of "NW_" is a non-localized scaffold. When I began this project, I had hoped to be able to place them using linkage, improving the genome assembly, but none of the loci on these unlocalized scaffolds were very informative.
 
 ### Before we proceed, we should calculate relatedness in vcftools.
 
@@ -219,7 +219,7 @@ cut -f 1 BCF2_filt2.recode.vcf | sort | uniq -c
 
 ##### Don't be confused by the pathway "lepmap3/bin" that is a directory where the java files are, and has nothing to do with binning.
 
-### Next, we use a custom awk script (written by Pasi Rastas) to complete the binning process
+### Next, we use a custom awk script (all awk scripts herein are written by Pasi Rastas) to complete the binning process
 
     awk -vpedigree=1 -f order2data.awk om_binned.txt | gzip > data_binned.gz
 
@@ -228,6 +228,8 @@ cut -f 1 BCF2_filt2.recode.vcf | sort | uniq -c
 ### With the SNPs binned, we are now ready for the SeparateChromosomes2 module
 
     zcat data_binned.gz | java -cp lepmap3/bin SeparateChromosomes2 data=- lodLimit=6.5 numThreads=12 lod3Mode=1 distortionLod=1 > binned_map6d.txt
+
+##### Setting lod3Mode=1 considers all binned SNPs as a block.
 
 ##### The "lodLimit" parameter sets the statistical association threshold (the logarithm of the odds) between loci.
 ##### In a straightforward scenario, an lod score of three means that the odds of two loci being linked are 1,000 to 1, but setting a lower lod threshold for linkage mapping requires some exploration of the data.
