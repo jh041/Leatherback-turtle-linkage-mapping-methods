@@ -1,4 +1,3 @@
-
 # Linkage group map instructions
 
 ## Here I go over how to group loci according to linkage order, including our method for binning loci together. This approach did not work well for the leatherback turtles, probably because we only had 28 individuals total (a small map) and because background linkage among chromosomes was high in this population, but future users might find this approach helpful.
