@@ -417,7 +417,7 @@ cut -f 1 BCF2_filt2.recode.vcf | sort | uniq -c
 
 ### The last thing to do is to plot the cM values against the bp positions. This is called a Marey map.
 
-![Marey Maps for Linkage groups 9 and 10](https://github.com/jh041/Leatherback-turtle-linkage-mapping-methods/blob/main/Ch9Ch10.pdf)
+![Marey Maps for Linkage groups 9 and 10](https://github.com/jh041/Leatherback-turtle-linkage-mapping-methods/blob/main/Linkage_grouping/Ch9Ch10.pdf)
 
 ##### cM values on the y-axis. Bp values on the x-axis
 
