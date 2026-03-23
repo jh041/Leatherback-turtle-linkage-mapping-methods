@@ -2,7 +2,7 @@
 
 ### Here I go over how to estimate cM values for SNP loci when arranged in their base-pair order.
 
-### This process has fewer steps than linkage grouping and uses less of the functionality of Lep-MAP3, so for a more in-depth exploration of the software see the [linkage grouping notes](https://github.com/jh041/Leatherback-turtle-linkage-mapping-methods/blob/main/LG_map_instructions.md).
+### This process has fewer steps than linkage grouping and uses less of the functionality of Lep-MAP3, so for a more in-depth exploration of the software see the [linkage grouping notes](https://github.com/jh041/Leatherback-turtle-linkage-mapping-methods/blob/main/Linkage_grouping/LG_map_instructions.md).
 
 ### Data processing follows as described in the linkage grouping notes, and we start here with the data.call.gz file which is the output of the ParentCall2 module in Lep-MAP3.
 
