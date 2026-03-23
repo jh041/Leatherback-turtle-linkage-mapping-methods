@@ -52,7 +52,7 @@
     geom_point(color="blue", alpha=0.1) +
     geom_line(data=as.data.frame(lowess(sa_chr01$bp, sa_chr01$cM, f = 0.05, iter = 1)), aes(x,y), color="orange", linewidth=1) + labs(title="Chromosome 1", x=NULL, y="cM") + theme_classic() + theme(plot.title = element_text(size = 12))
 
-##### you can see that plot [here](https://github.com/jh041/Leatherback-turtle-linkage-mapping-methods/blob/main/Chromosome1_lowess.pdf).
+##### you can see that plot [here](https://github.com/jh041/Leatherback-turtle-linkage-mapping-methods/blob/main/cM_prediction/Chromosome1_lowess.pdf).
 
 ##### you can adjust the fit of the model using the f and iter parameters.
 
