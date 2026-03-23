@@ -24,8 +24,6 @@
 
 ##### Here, the module is doing something different than in the linkage grouping exercise. We already know the order, and are using the option "evaluateOrder" to 
 
-> Written with [StackEdit](https://stackedit.io/).
-
 ##### The output of OrderMarkers2 looks like this...
 
     #marker_number	male_position	female_position	( parental_phase )[	phased data]
@@ -48,7 +46,7 @@
 
 ##### All chromosomes are in a single file, with the: chromosome (28), bp position, linkage group (28), and male and female cM values respectively.
 
-##### Click here to view [marey maps](https://github.com/jh041/Leatherback-turtle-linkage-mapping-methods/blob/main/marey.png) for each of the 28 chromosomes.
+##### Click here to view [marey maps](https://github.com/jh041/Leatherback-turtle-linkage-mapping-methods/blob/main/Chromosome_linkage_mapping/marey.png) for each of the 28 chromosomes.
 
 ### For the paper, this map was chosen over the linkage grouping map because it retains more markers and eliminates noise from background linkage that we later learned was a strong signal in this genome. With a good chromosome-level genome assembly this method is straightforward and relatively easy. However, without the high-quality reference genome, it is far better to let the linkage groups determine marker order.
 
