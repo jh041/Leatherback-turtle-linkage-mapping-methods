@@ -218,7 +218,7 @@ cut -f 1 BCF2_filt2.recode.vcf | sort | uniq -c
 
 ##### Don't be confused by the pathway "lepmap3/bin" that is a directory where the java files are, and has nothing to do with binning.
 
-### Next, we use a custom awk script (all awk scripts herein are written by Pasi Rastas) to complete the binning process
+### Next, we use a custom script [order2data.awk](https://github.com/jh041/Leatherback-turtle-linkage-mapping-methods/blob/main/Linkage_grouping/order2data.awk) (all awk scripts herein are written by Pasi Rastas) to complete the binning process
 
     awk -vpedigree=1 -f order2data.awk om_binned.txt | gzip > data_binned.gz
 
@@ -330,7 +330,7 @@ cut -f 1 BCF2_filt2.recode.vcf | sort | uniq -c
 
     for i in {1..28}; do awk -vchr=$i -f map2genotypes.awk order$i.txt | awk -vcolumn=1 -f map.awk pass=1 <(awk '{print NR-1"\t"$0}' snps_binned.txt) pass=2 - > ord$i.mapped; done
 
-##### The two awk scripts (map.awk and map2genotypes.awk) can be found in the main github repository
+##### The two awk scripts ([map.awk](https://github.com/jh041/Leatherback-turtle-linkage-mapping-methods/blob/main/Linkage_grouping/map.awk) and [map2genotypes.awk](https://github.com/jh041/Leatherback-turtle-linkage-mapping-methods/blob/main/Linkage_grouping/map2genotypes.awk)) can be found in the main github repository
 
 ### Next we want to purify the linkage groups
 
