@@ -27,7 +27,7 @@ After trimming:  108362002 reads R1, sequence length 100-150
 
     samtools view --threads 10 -b -F 4 X.sam > X.bam
 
-### then you need to run the command samtools fixmate with the -m option (this is necessary for removing PCR duplicate reads)
+### then you need to run the command [samtools](https://www.htslib.org/) fixmate with the -m option (this is necessary for removing PCR duplicate reads)
 
     samtools fixmate -m -@ 14 X.bam X_fxm.bam
 
