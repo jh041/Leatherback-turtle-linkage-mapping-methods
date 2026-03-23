@@ -1,6 +1,6 @@
 # Predicting cM from bp position
 
-### With cM values for all linkage mapping SNPs, you can examine the recombination landscape of chromosomes using [marey maps](https://github.com/jh041/Leatherback-turtle-linkage-mapping-methods/blob/main/marey.png)
+### With cM values for all linkage mapping SNPs, you can examine the recombination landscape of chromosomes using [marey maps](https://github.com/jh041/Leatherback-turtle-linkage-mapping-methods/blob/main/Chromosome_linkage_mapping/marey.png)
 
 ### Patterns of recombination in the genome are informative to evolutionary biology and molecular ecology, but not all SNPs from your population- or species-level studies are going to be present in the map. Therefore, it is beneficial to be able to predict cM values for any new polymorphic variants.
 
@@ -8,7 +8,7 @@
 
 ### I am going to do this in R
 
-##### Step 1, load the "[map.txt](https://github.com/jh041/Leatherback-turtle-linkage-mapping-methods/blob/main/map.txt)" file resulting from the Chromosome-informed map into R
+##### Step 1, load the "[map.txt](https://github.com/jh041/Leatherback-turtle-linkage-mapping-methods/blob/main/data/map.txt)" file resulting from the Chromosome-informed map into R
 
     > map <- read.table("map.txt", header=F)
     
