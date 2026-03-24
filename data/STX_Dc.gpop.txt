@@ -1,4 +1,4 @@
-converted from filtX.recode.vcf
+Rapture SNPs from St. Croix nesting leatherbacks. Pop1 = 90s females. Pop2 = 2010s females.
 01_11028227
 01_23416158
 01_23416385
