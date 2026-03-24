@@ -10,7 +10,7 @@
 
 ### There are many population genetics packages that you can use to compute *G*is, and calculate a HWE p-value, but in this instance I used [GenoDive](https://www.patrickmeirmans.com/software/Home.html). 
 
-### After I've calculated all my statistics from the different missing data treatments I've compiled a table that I read in R like this...
+### After I've calculated all my statistics from the different missing data treatments I've compiled a [table](https://github.com/jh041/Leatherback-turtle-linkage-mapping-methods/blob/main/data/HWE.txt) that I read in R like this...
 
     head(H)
              Loci    N30    T30    O30  N30p  T30p  O30p    N20    T20  N20p  T20p
