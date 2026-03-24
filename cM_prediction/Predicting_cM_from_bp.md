@@ -96,6 +96,8 @@
 
     ch01_bp2cM_model <- readRDS("ch01_bp2cM_model.rds")
 
+### All chromosome models from this study can be retrieved [here](https://github.com/jh041/Leatherback-turtle-linkage-mapping-methods/tree/main/cM_prediction/models)
+
 ### Next, we can create a predictor function to predict values based on bp in other data sets
 
     ch01_bp2cM_predict <- approxfun(ch01_bp2cM_model)
